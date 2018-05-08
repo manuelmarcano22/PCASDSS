@@ -58,9 +58,9 @@ body {
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Galactic Bulge Survey</title>
+		<title>PCA and SDSS </title>
 
-		<meta name="description" content="Galactic Bulge Survey" />
+		<meta name="description" content="Data Science Project" />
 		<meta name="author" content="Manuel Pichardo Marcano" />
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -77,6 +77,19 @@ body {
 <link rel="stylesheet" href="//aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.css" />
 <!-- you can skip the following line if your page already integrates the jQuery library -->
 <script type="text/javascript" src="//code.jquery.com/jquery-1.12.1.min.js" charset="utf-8"></script>
+
+<link
+    href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.13.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.13.min.css"
+    rel="stylesheet" type="text/css">
+
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.js"></script>
+
 
 
 		<!-- For syntax highlighting -->
@@ -156,85 +169,6 @@ body {
 
 
                 <section>
-			<aside class='notes'>
-				Comte
-
-				</aside>
-
-                            <h3>Auguste Comte's blunder </h3>
-			    <h4> One hundred years to prove that Comte was wrong! </h4>
-
-<div class="altpanel" style="height: 430px">
-
-
-
-<div class style="float: left; width: 100%" data-fragment-index='10'>
-							<ul style='margin:0px; padding:10px'>
-				    <li> <blockquote>""…Our knowledge concerning the gaseous envelopes [of stars] is necessarily limited to their existence ... we shall not at all be able to determine their chemical composition or even their density …" (Cours de philosophie positive , vol. 2, 1835)"</blockquote>
-
-								<li style='list-style: none;'></li>
-							</ul>
-						</div>
-						<figure style="float: bottom; width: 90%">
-							<img src="images/comte.jpg" />
-							<figcaption>
-                            <large>  Auguste Comte,  1798 –185.</large>
-							</figcaption>
-						</figure>
-                           
-<!--						<figure style="float: right; height: 90%">
-							<img src="images/LeighBSS_CMD.png" />
-							<figcaption>
-                            <small>Leigh et al. 2011</small>
-							</figcaption>
-                            </figure> -->
-
-
-
-
-						</div>
-                </section>
-
-
-<section>
-	<aside class='notes'>
-adfariod. 
-	</aside>
-						<h2>Spectroscopy </h2>
-
-<table class="hanoi" style="float: center; width: 100%;"><tr>
-							<td>
-								<img src="images/fus.png" width="350px"  />
-							</td>
-							<td>
-								<img src="images/icons/rightarrow_xs.png" width='100px'/>
-							</td>
-							<td>
-								<img src="images/bunsen.JPG" width="500px" />
-							</td>
-						</tr><tr style="font-size: .5em; line-height: 1">
-							<td>
-								Proton–proton chain reaction
-							</td>
-							<td></td>
-                            <td>
-                                    <p>
-
-					Simms spectroscopes
-                                    </p>
-							</td>
-						</tr></table>
-
-
-						</section>
-
-
-
-
-
-					<!-- La Via Lactea -->
-
-                <section>
 	<aside class="notes">
 
 When Cecilia Payne began her study of stellar spectra, scientists believed that the relative abundance of elements in the atmospheres of the Sun and the stars was similar to that in Earth’s crust. In 1889, geochemist Frank Wigglesworth Clarke’s The Relative Abundance of the Chemical Elements was the result of his comprehensive sampling of minerals from many parts of Earth’s crust. Many of the strong lines of the solar spectrum came from the elements most abundant on Earth. The pre-eminent American physicists at the time, Henry Norris Russell and Henry Rowland, believed that the elemental abundances on Earth and the Sun were substantially identical. Russell wrote [2] “The agreement of the solar and terrestrial lists is such as to confirm very strongly Rowland’s opinion that, if the Earth’s crust should be raised to the temperature of the Sun’s atmosphere, it would give a very similar absorption spectrum.” The spectra of the Sun and other stars were similar, so it appeared that the relative abundance of elements in the universe was like that in Earth’s crust.
@@ -254,6 +188,8 @@ When Cecilia Payne began her study of stellar spectra, scientists believed that 
 						</figure>
 
                 </section>
+
+
 
 
                     <section>
@@ -283,6 +219,40 @@ When Cecilia Payne began her study of stellar spectra, scientists believed that 
 
                     </section>
 
+
+
+                    <section>
+
+	<aside class="notes">
+		Comenzo con Galileo Galilei, Kant y sus island universe. Desde Hersehcl y galileo que es una region densa de estrellas. 
+	</aside>
+				
+
+
+                            <h2>OBAFGKM sequence</h2>
+
+
+			
+							<ul style='margin:0px; padding:10px'>
+
+						<figure style="top margin: 50em; float: right; width: 100%">
+						<img src="images/starsa.jpg" />
+						<figcaption>
+							NOAO/AURA/NSF  
+						</figcaption>
+					</figure>
+			    </ul>
+                                            
+
+                    </section>
+
+
+
+
+					<!-- La Via Lactea -->
+
+
+
                     <section>
 
 	<aside class="notes">
@@ -291,7 +261,13 @@ When Cecilia Payne began her study of stellar spectra, scientists believed that 
 
 
                             <h2>A theoretical breakthrough </h2>
-			    <large>"The most brilliant Ph.D. thesis ever written in astronomy.”</large>
+
+			    <!--<large>"The most brilliant Ph.D. thesis ever written in astronomy.”</large>-->
+							<ul style='margin:10px; padding:10px'>
+			    <li>Primarily a temperature sequence</li>
+			    <ul><li>Composition differences are minor </li></ul>
+				    <li>Stars are predominalty H and He</li>
+			    </ul>
 
 
 				    <blockquote>There is no joy more intense than that of coming upon a fact that cannot be understood in terms of currently accepted ideas." 
@@ -333,6 +309,7 @@ When Cecilia Payne began her study of stellar spectra, scientists believed that 
 						<img align='middle' src="images/nancy.jpg" />
 						<figcaption>
 						</figcaption>
+				    </center>
 					</figure>
 
 
@@ -430,8 +407,31 @@ sources.
 
 				<section data-state="sand" data-chapter="Data Comphresion and Noise Filtering">
 				
+                    <section>
+
+
+
+                            <h2>The Data </h2>
+                            <h4>SEGUE: Sloan Extension for Galactic Understanding and Exploration
+			    </h4>
+				    <center>
+						<figure style=" float: bottom; width: 100%">
+						<img align='middle' src="images/sdssspec.svg" />
+						<figcaption>
+						</figcaption>
+				    </center>
+					</figure>
+
+                                            
+
+                    </section>
+
+
+
+
+
 					<section>
-						<h2>The Data</h2>
+						<h2>Principal Component Analysis of SDSS Stellar Spectra</h2>
 <div class="altpanel" style="height: 430px">
 						<div style="float: left; width: 45%" data-fragment-index='10'>
 							<ul>  
@@ -584,14 +584,16 @@ $$T_{eff} = T_0 + \sum ^C _{j=1} a_j PC_j  + \sum ^C _{j=1} b_j PC_j^2 \, \, + \
                     <section>
 
 
-                            <h2>Unsupervised Learning </h2>
-
-
-			    <ul><li>Goal: Discover structure in the data</li>
-				    <ul>
-				<li>Use PCA</li>
-				<li>Smaller singular values related to log(g)    </li></ul>
-
+                            <h2>Classification </h2>
+			    <large>Goal: Discover structure in the data</large>
+                            
+			
+				<ul style='margin:10px; padding:10px'>
+					    <li>Plot Reduced-dimension representation</li>
+					    <li>Linear Decomposition</li>
+					    <ul><li>PCA, ICA, NMF</li></ul>
+					    <li>Non-Linear Decomposition</li>
+				    <ul><li>t-distributed stochastic neighbor embedding (tSNE) </li>
 
 			    </ul>
                                             
@@ -606,7 +608,8 @@ $$T_{eff} = T_0 + \sum ^C _{j=1} a_j PC_j  + \sum ^C _{j=1} b_j PC_j^2 \, \, + \
                    <section>
 							<h2>Conclusions</h2>
 <div class="block">
-        We have demonstrated how an IFU like <em>MUSE</em> can be used to efficiently study the population of compact objects in globular clusters. <em>Deeper observation</em> are needed but we exposed some hints that the population of field CVs and CVs in GCs are <em>different</em>					
+
+We have demonstrated how dimensionalty reduction methods like <em>PCA</em>  and <em>t-SNE</em> can be used to efficiently target the future challenges with the increase of spectroscpic data soon available from future and ongoing all-sky surveys. 
 						</div>
                     </section>
                 </section> <!-- End COnclusion -->
