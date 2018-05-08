@@ -379,7 +379,7 @@ sources.
 							</li>
 							<li class='fragment' data-fragment-index='2'><b>Noise:</b>
 							<ul>
-                                    <li><span class="fragment grow" class='fragment highlight-red' data-fragment-index="5">Filter Glitches and Skylines  </span></li>
+                                    <li><span class="fragment grow" class='fragment highlight-red' data-fragment-index="5">Filter Glitches, Skylines, Cosmic Rays  </span></li>
                                     </ul>
                             </li>
 							<li class='fragment' data-fragment-index='3'><b>Feature Extracion:</b>
@@ -398,6 +398,9 @@ sources.
 
 
 </section>
+
+
+
 
 
 
@@ -584,7 +587,7 @@ $$T_{eff} = T_0 + \sum ^C _{j=1} a_j PC_j  + \sum ^C _{j=1} b_j PC_j^2 \, \, + \
                     <section>
 
 
-                            <h2>Classification </h2>
+                            <h2>Classification: Unsupervised</h2>
 			    <large>Goal: Discover structure in the data</large>
                             
 			
@@ -601,6 +604,80 @@ $$T_{eff} = T_0 + \sum ^C _{j=1} a_j PC_j  + \sum ^C _{j=1} b_j PC_j^2 \, \, + \
                     </section>
 
 
+                    <section>
+
+                            <h2>PCA </h2>
+
+
+			
+							<ul style='margin:0px; padding:10px'>
+
+						<figure style="top margin: 50em; float: right; width: 100%">
+						<img src="images/p.png" />
+						<figcaption>
+						</figcaption>
+					</figure>
+			    </ul>
+                                            
+
+                    </section>
+
+
+                    <section>
+
+                            <h2>NMF </h2>
+
+
+			
+							<ul style='margin:0px; padding:10px'>
+
+						<figure style="top margin: 50em; float: right; width: 100%">
+						<img src="images/nmf.png" />
+						<figcaption>
+						</figcaption>
+					</figure>
+			    </ul>
+                                            
+
+                    </section>
+
+
+                    <section>
+
+                            <h2>t-SNE </h2>
+
+							<ul style='margin:0px; padding:10px'>
+
+						<figure style="top margin: 50em; float: right; width: 100%">
+						<img src="images/ts.png" />
+						<figcaption>
+						</figcaption>
+					</figure>
+			    </ul>
+
+                    </section>
+
+                    <section>
+
+                            <h2>t-SNE </h2>
+
+							<ul style='margin:0px; padding:10px'>
+
+						<figure style="top margin: 50em; float: right; width: 100%">
+						<img src="images/t2.png" />
+						<figcaption>
+						</figcaption>
+					</figure>
+			    </ul>
+
+                    </section>
+
+
+
+
+
+
+
      </section> <!-- End Concluions -->
 
 
@@ -609,7 +686,7 @@ $$T_{eff} = T_0 + \sum ^C _{j=1} a_j PC_j  + \sum ^C _{j=1} b_j PC_j^2 \, \, + \
 							<h2>Conclusions</h2>
 <div class="block">
 
-We have demonstrated how dimensionalty reduction methods like <em>PCA</em>  and <em>t-SNE</em> can be used to efficiently target the future challenges with the increase of spectroscpic data soon available from future and ongoing all-sky surveys. 
+Dimensionalty reduction methods like <em>PCA</em>  and <em>t-SNE</em> can be used to efficiently target the future challenges with the increase of spectroscpic data soon available from future and ongoing all-sky surveys. 
 						</div>
                     </section>
                 </section> <!-- End COnclusion -->
@@ -619,27 +696,31 @@ We have demonstrated how dimensionalty reduction methods like <em>PCA</em>  and 
                     <section>
                             <h2>Future Work </h2>
 					<ul>
-							<li><b>Follow up Observations </b>
+							<li><b>More data </b>
 							<ul>
-                                    <li> Submitted proposal for observing time </li>
-                                        <ul>
-                                                <li>Determine NS atmosphere </li>
-                                                <li>Study CV with large field-of-view </li>
-                                        </ul>
+								<li>Try with >5000 stars </li>
+								<li>Giants, Dwarfs. Late type stars ... </li>
 
 							</ul>
 							</li>
-							<li class="fragment"><b>Data analysis:</b>
+							<li class="fragment"><b>Supervised Learning:</b>
 							<ul>
-                                    <li> Optima spectra extraction</li>
-                                    <li> Short term variability</li>
-                                    <li> Analysis available spectra </li>
+                                    <li>PCA can be combined with ANN  </li>
                             </ul>
-							<li class="fragment"><b>Reproducibility:</b>
+							<li class="fragment"><b>Outliers:</b>
 							<ul>
-                                    <li> Continuous analysis</li>
-                                    <li> Cloud Computing </li>
+                                    <li>Take a closer look at outliers  </li>
+				    <ul><li>Hidden Accretors, Binaries, misclassified stars ...?</li> </ul>
 							</ul>
+
+							<li class="fragment"><b>Use Line Index:</b>
+							<ul>
+                                    <li>Matrix of Equivalent Width</li>
+                                    <li> Radial Velocity, Distance, Emission lines ...  </li>
+							</ul>
+
+
+
 						</ul>
                     </section>
 
